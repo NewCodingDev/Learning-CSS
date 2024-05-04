@@ -1,0 +1,105 @@
+/* This is styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;z
+}
+
+h1 {
+    color: hsl(207, 43%, 73%);
+}
+
+#heading {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: dashed;
+}
+#Div {
+    background-color: blueviolet;
+}
+
+p {
+    background-color: bisque
+}
+.heading {
+    color: rosybrown;
+}
+
+#Outer {
+    font-size: 25px;
+    font-weight: 500;
+}
+#Inner {
+    font-size: 80%;
+    font-weight: 50%;
+}
+nav .navigation{
+    text-decoration:solid;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 600
+    color: hsl(201, 96%, 20%);
+}
+header{
+    background-color: lightgreen;
+}
+#home:hover {
+    color: hsl(201, 96%, 50%);
+}
+main {
+   background-color: bisque;   
+}
+#bg{
+    width: 500px;
+    height: 550px;
+    /* background-image: url(OIP.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-color: red; */
+    background: red url(OIP.jpg) no-repeat top;
+}
+#image {
+    width: 4em;
+    height:2em;
+    border: 1px solid yellow;
+    align-self: center;
+}
+.icon button i{
+    font-size: 342px;
+    color: rgb(12, 72, 92);
+    padding: 10px 15px 10px 15px; 
+    margin: 10px;
+    position: relative;
+    top: -143px;
+    left: -124px; 
+}
+.icon button i:hover{
+    color: rgb(34, 166, 210);
+}
+.icon button i:active{
+    color: rgb(14, 19, 21);
+}
+.icon button{
+    width: 100px;
+    height:  100px;
+    color: rgb(12, 72, 92);
+    border: 1px solid black;
+    border-radius: 32px;
+    cursor: pointer;
+    padding: 100px; 
+    margin: 10px;
+    box-sizing: content-box;
+}
+#box1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: rgb(33, 90, 140);
+    font-size: 50px;
+    text-align:center
+}
