@@ -3,9 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;z
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
-
 h1 {
     color: hsl(207, 43%, 73%);
 }
@@ -35,18 +34,35 @@ p {
     font-weight: 50%;
 }
 nav .navigation{
-    text-decoration:solid;
     display: inline-block;
-    padding-bottom: 10px;
-    margin-left: 100px;
-    align-self: center;
+    padding-top: 10px;
+    margin-left: 50px;
     font-size: 20px;
-    font-weight: 600
-    color: hsl(201, 96%, 20%);
+    font-weight: 600;
 }
-header{
+nav .navigation a{
+    text-decoration: none;
+    color: hsl(219, 85%, 48%);
+}
+#home{
+    width: 30px;
+    height: 53px;
+    position: relative;
+    left: -30px;   
+}
+nav .navigation a:hover{
+    color: hsl(219, 76%, 60%);
+    text-decoration:rgb(230, 170, 170) underline;
+}
+nav {
+    width: auto;
+    height: 50px;
+    margin-bottom: 5px;
     background-color: lightgreen;
+    display: flex;
+    justify-content: space-evenly;
 }
+
 #home:hover {
     color: hsl(201, 96%, 50%);
 }
@@ -70,13 +86,13 @@ main {
     align-self: center;
 }
 .icon button i{
-    font-size: 342px;
+    font-size: 343px;
     color: rgb(12, 72, 92);
     padding: 10px 15px 10px 15px; 
     margin: 10px;
     position: relative;
-    top: -143px;
-    left: -124px; 
+    top: -144px;
+    left: -125px; 
 }
 .icon button i:hover{
     color: rgb(34, 166, 210);
@@ -85,21 +101,152 @@ main {
     color: rgb(14, 19, 21);
 }
 .icon button{
+    display: inline-block;
     width: 100px;
     height:  100px;
     color: rgb(12, 72, 92);
     border: 1px solid black;
     border-radius: 32px;
+    box-sizing: content-box;
     cursor: pointer;
     padding: 100px; 
     margin: 10px;
-    box-sizing: content-box;
+    
 }
 #box1{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
     border: 2px solid red;
-    background-color: rgb(33, 90, 140);
+    border-radius: 50%;
     font-size: 50px;
-    text-align:center
+    text-align:center;
+}
+#container{
+    border: 2px solid red;
+}
+#box2{
+    position: fixed;
+    right: 10px;
+    bottom: 415px;
+}
+#box3{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1
+}
+.box01{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(199, 194, 47);
+    position: relative;
+    top: 10px;
+    transition-property: all;
+    transition-delay: 0.25s; ;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
+
+}
+#imgcontainer{
+    width: 300px;
+    height: 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
+#img1{
+    width: 50px;
+    height: 50px;
+    align-self: self-end;
+    position: absolute;
+    animation-name: lefttoright;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#category{
+    width: auto;
+    height: 30px;
+    padding-top: 5px ;
+    background: rgb(233, 160, 160);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.brand{
+    font-weight: 800;
+    font-size: 10px;
+    width: 100px;
+    text-decoration: 2px underline rgb(237, 77, 56);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+#gucci{
+    background-color: aquamarine;
+}
+#mj{
+    background-color: blue;
+    
+}
+#nike{
+    background-color: brown;
+    flex-grow: 1;
+    flex-shrink: 1;  
+}
+#box5{
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    color: green;
+    font-size: 10px;
+
+}
+@media screen and (min-width:300px ) and (max-width:400px){
+    #box5{ background-color: red;
+    }
+}
+@media screen and (min-width:400px ){
+    #box5{background-color: blue;
+    }
+}
+@keyframes lefttoright {
+    0% {left:50px;}
+    40% {left: 200px;}
+    80%{left: 300px;}
+    100%{left:400px}
+}
+#box4:hover{
+    transform:rotate(45deg) skew(45deg) translate(20px,10px) ;
+}
+#head{
+    text-align: center;
+}
+#loadingC{
+    width: 90%;
+    border: 2px solid rgb(2, 52, 27);
+    height: 20px;
+    background-color: rgb(238, 180, 103);
+    border-radius: 10px;
+    position: relative;
+    left: 20px;
+}
+#fill{
+    height: 100%;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-timing-function;    
+    animation-iteration-count: infinite;
+}
+@keyframes loading {
+    0% {width: 0%;}
+    90% {width: 85%;}
+    95% {width: 75%;}
+    100% {width: 100%;}   
 }
